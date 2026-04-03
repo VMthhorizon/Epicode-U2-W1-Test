@@ -37,7 +37,7 @@ header section nav a {
 }
 
 .nav-hobby {
-  display: none;
+  display: none !important;
 }
 
 .hide {
@@ -279,9 +279,10 @@ h6 {
   }
 
   .nav-article {
-    display: none;
+    display: none !important;
   }
   .nav-hobby {
-    display: inline-block;
+    display: flex !important;
+    flex-direction: row;
   }
 }
