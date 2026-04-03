@@ -1,0 +1,287 @@
+body {
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+section {
+  padding: 1.5em;
+}
+header section {
+  background-color: rgb(235, 197, 66);
+}
+
+header section nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header section nav div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+header section nav a {
+  color: black;
+  font-size: 1.2em;
+}
+
+.nav-hobby {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 0.7em;
+}
+
+.divisore {
+  border: 0;
+  height: 1px;
+  background: black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+#top-article {
+  display: flex;
+  flex-direction: column;
+  height: 25em;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+#top-article .btn {
+  font-size: 1.4em;
+  padding: 0.3em 2em;
+}
+
+main {
+  background-color: white;
+}
+
+h4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+#trending {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+}
+
+span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.number {
+  color: rgb(194, 194, 194);
+  font-size: 2em;
+  font-weight: 800;
+}
+h5 {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.2em;
+  color: rgb(193, 193, 193);
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1em;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.place {
+  font-size: 0.8em;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+.card img {
+  border-radius: 50px;
+}
+
+.light-line {
+  border: 0;
+  height: 1px;
+  background: rgb(208, 208, 208);
+  margin: 0;
+}
+
+#hobbies {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.hobby-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.hobby-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(203, 203, 203);
+  flex-basis: 22%;
+  padding: 1em;
+}
+
+#articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.4em;
+}
+.img img {
+  width: 15em;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+.card-info.info-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  font-size: 1em;
+}
+
+.genre.btn {
+  font-size: 0.6em;
+  background-color: rgb(204, 204, 204);
+  color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  .hide {
+    display: inline-block;
+  }
+  section:not(#nav-section) {
+    padding: 8em;
+  }
+  #trending {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+  .card {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    flex-basis: 30%;
+  }
+  .number {
+    color: rgb(194, 194, 194);
+    font-size: 3em;
+    font-weight: 800;
+  }
+  .date {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+  #content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4em;
+    padding: 0;
+  }
+  #content-wrapper section {
+    padding: 0;
+  }
+  #articles {
+    flex: 2;
+    order: 1;
+  }
+  #hobbies {
+    flex: 1;
+    order: 2;
+    top: 20px;
+    border-bottom: none;
+  }
+  .card-bottom {
+    display: flex;
+    gap: 1em;
+  }
+
+  .card-info.info-bottom {
+    flex: 0 1 auto;
+  }
+
+  .nav-article {
+    display: none;
+  }
+  .nav-hobby {
+    display: inline-block;
+  }
+}
