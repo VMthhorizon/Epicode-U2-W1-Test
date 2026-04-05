@@ -22,3 +22,11 @@ setInterval(() => {
     randIndex.classList.remove("letter-opacity");
   }, 1500);
 }, 50);
+
+//METODO CON TOGGLE CODICE PIU CORTO, PIU RANDOM MA MENO CONTROLLO
+// setInterval(() => {
+//   const m = document.getElementsByTagName("g");
+//   const randNum = Math.floor(Math.random() * m.length);
+//   const randIndex = m[randNum];
+//   randIndex.classList.toggle("letter-opacity");
+// }, 100);
